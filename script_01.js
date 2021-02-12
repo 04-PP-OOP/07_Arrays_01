@@ -26,12 +26,24 @@ for (let i = 0; i < 10; i++) {
 }
 */
 
-
 // for (let i = 0; i < array.length; i++) {
 //     ausgabe(i + ":" + array[i]);   
 // }
 
-
+/*** 02b. Funktionalität mit Array  */
+let arr = ["Ich","bin","Drazen","Savi"];
+ausgabe(getSentenceArr2(arr)); // Test
+function getSentenceArr2(arr) {
+    let gap = " ";
+    let punct = ".";
+    let str = "leer"; 
+    
+    for (let i = 0; i < arr.length; i++) {
+            ausgabe(arr[i]);   
+    }
+   
+    return str;  
+}
 
 
 /*** 02a. Funktionalität mit Array  */
@@ -50,7 +62,6 @@ function getSentenceArr(arr) {
                 punct;
     return str;  
 }
-
 
 /*** 01. Funktionalität mit Einzelparametern */
 //ausgabe(getSentence("Ich","bin","Drazen","Savi")); // Test
