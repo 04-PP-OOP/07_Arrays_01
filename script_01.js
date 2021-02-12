@@ -1,31 +1,30 @@
 
 /*** 1.0 Arrays */
 
-/* 1. Array
-let arr;
-arr = new Array(); // Konstruktor
-arr = []; // Literal
-arr = [2,6,7,12];
-arr = [true,false];
-arr = ["Ich","bin","Drazen"];
+/* 1. Array - Einführung */
 
-ausgabe(arr);
-ausgabe(arr[0]);
-ausgabe(arr[2]);
-ausgabe(arr.length);
-*/
+// let arr;
+// arr = new Array(); // Konstruktor
+// arr = []; // Literal
+// arr = [2,6,7,12];
+// arr = [true,false];
+// arr = ["Ich","bin","Drazen"];
+
+// ausgabe(arr);
+// ausgabe(arr[0]);
+// ausgabe(arr[2]);
+// ausgabe(arr.length);
+
 
 /* 1a. Schleifen (for-schleife) */
-let array = ["Ich","bin","Drazen","Savi"];
-//ausgabe(arr);
-// i 0,1,2,3 .... n
 
-/*
-for (let i = 0; i < 10; i++) {
-    ausgabe(i);
-}
-*/
+/* For -Schleife als Wiederholungs-Struktur */
+// for (let i = 0; i < 10; i++) {
+//     ausgabe(i);
+// }
 
+/* For -Schleife mit Array */
+//let array = ["Ich","bin","Drazen","Savi"];
 // for (let i = 0; i < array.length; i++) {
 //     ausgabe(i + ":" + array[i]);   
 // }
@@ -38,26 +37,24 @@ Solange die Variable existiert, bleibt dieser erhalten.
 hier: Aufsummierung
 */
 
-/*
-let a = 0; // Anfangswert
-ausgabe("inhalt von a: " + a);
-a = a + 1;  // a = 0 + 1
-ausgabe("inhalt von a: " + a);
-a = a + 1;  // a = 1 + 1
-ausgabe("inhalt von a: " + a);
-a = a + 1;  // a = 2 + 1
-ausgabe("inhalt von a: " + a);
-*/
+/* Zu "Fuß" - DRY !!! */
+// let a = 0; // Anfangswert
+// ausgabe("inhalt von a: " + a);
+// a = a + 1;  // a = 0 + 1
+// ausgabe("inhalt von a: " + a);
+// a = a + 1;  // a = 1 + 1
+// ausgabe("inhalt von a: " + a);
+// a = a + 1;  // a = 2 + 1
+// ausgabe("inhalt von a: " + a);
 
-/*
-let a = 0; // Anfangswert
-for (let i = 0; i < 4; i++) {
-    ausgabe("ausgabe aus der loop: " + a);
-    a += 1;  // a = 0 + 1
-}
-ausgabe("ausgabe nach der loop: " + a);
-*/
 
+/* Besser: mit FOR-Schleife */
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 4; i++) {
+//     ausgabe("ausgabe aus der loop: " + a);
+//     a += 1;  // a = 0 + 1
+// }
+// ausgabe("ausgabe nach der loop: " + a);
 
 /* 
 1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
@@ -65,19 +62,19 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Konkatenation eines Strings
 */
 
-/*
-let str = ""; // Anfangswert
-let addStr = "Test"; 
-let gap = " ";
-let punct = ".";
 
-for (let i = 0; i < 5; i++) {
-    str += addStr + gap;  
-}
+// let str = ""; // Anfangswert
+// let addStr = "Test"; 
+// let gap = " ";
+// let punct = ".";
 
-str = str + punct;
-ausgabe("Gesamter String: " + str);
-*/
+// for (let i = 0; i < 5; i++) {
+//     str += addStr + gap;  
+// }
+
+// str = str + punct;
+// ausgabe("Gesamter String: " + str);
+
 
 
 /*** 02b. Funktionalität mit Array  */
