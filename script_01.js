@@ -30,18 +30,72 @@ for (let i = 0; i < 10; i++) {
 //     ausgabe(i + ":" + array[i]);   
 // }
 
+ /*********   Überlegungen **********/
+
+/* 
+1. Einer Variablen kann Ihr eigener Wert zugewiesen werden.
+Solange die Variable existiert, bleibt dieser erhalten.
+hier: Aufsummierung
+*/
+
+/*
+let a = 0; // Anfangswert
+ausgabe("inhalt von a: " + a);
+a = a + 1;  // a = 0 + 1
+ausgabe("inhalt von a: " + a);
+a = a + 1;  // a = 1 + 1
+ausgabe("inhalt von a: " + a);
+a = a + 1;  // a = 2 + 1
+ausgabe("inhalt von a: " + a);
+*/
+
+/*
+let a = 0; // Anfangswert
+for (let i = 0; i < 4; i++) {
+    ausgabe("ausgabe aus der loop: " + a);
+    a += 1;  // a = 0 + 1
+}
+ausgabe("ausgabe nach der loop: " + a);
+*/
+
+
+/* 
+1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
+Solange die Variable existiert, bleibt dieser erhalten
+hier: Konkatenation eines Strings
+*/
+
+/*
+let str = ""; // Anfangswert
+let addStr = "Test"; 
+let gap = " ";
+let punct = ".";
+
+for (let i = 0; i < 5; i++) {
+    str += addStr + gap;  
+}
+
+str = str + punct;
+ausgabe("Gesamter String: " + str);
+*/
+
+
 /*** 02b. Funktionalität mit Array  */
-let arr = ["Ich","bin","Drazen","Savi"];
+let arr = ["Ich","bin","der","coole","Drazen","Savi"];
 ausgabe(getSentenceArr2(arr)); // Test
 function getSentenceArr2(arr) {
     let gap = " ";
     let punct = ".";
-    let str = "leer"; 
+    let str = ""; 
     
     for (let i = 0; i < arr.length; i++) {
-            ausgabe(arr[i]);   
+       if (i != (arr.length-1)) {
+            str += arr[i] + gap; 
+       } else {
+            str += arr[i] + punct;
+       }
     }
-   
+    
     return str;  
 }
 
